@@ -1,0 +1,44 @@
+# B 站课程抓取技能 - Git 忽略文件
+
+# 环境变量（包含敏感信息）
+.env
+.env.local
+.env.*.local
+
+# 编译输出
+dist/
+build/
+*.js
+*.d.ts
+!*.test.d.ts
+
+# 依赖
+node_modules/
+
+# 测试覆盖率
+coverage/
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 缓存
+.cache/
+*.cache
+.env
