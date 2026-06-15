@@ -276,11 +276,25 @@ cat ~/.openclaw/workspace/skills/bilibili-course-catcher/.env | grep BILIBILI_CO
 ```
 bilibili-course-catcher/
 ├── README.md                 # 本文档（开源发布用）
-├── SKILL.md                  # 技能定义（OpenClaw加载）
+├── SKILL.md                  # 技能定义（OpenClaw加载，<1000词精简版）
 ├── LICENSE                   # MIT许可证
-└── references/
-    └── bilibili-api-docs.md  # B站API参考文档
+├── evals/                    # 测试用例（Perplexity规范）
+│   └── cases.md              # Positive/Negative/Boundary用例
+├── templates/                # 输出模板（Perplexity规范）
+│   └── output-template.md    # 推荐结果格式模板
+├── references/               # 参考文档（Perplexity规范）
+│   ├── bilibili-api-docs.md  # B站API参考文档
+│   └── changelog.md          # 变更日志（v1.0-v1.6）
+└── src/                      # 源代码
+    ├── index.ts
+    ├── questionnaire.ts
+    ├── bilibili-api.ts
+    ├── scorer.ts
+    ├── matcher.ts
+    └── formatter.ts
 ```
+
+**Perplexity 优化说明**：遵循渐进披露原则，重型内容（变更日志、输出模板、测试用例）外置到独立文件，SKILL.md 保持精简（<1000词），降低每次加载的 token 消耗。
 
 ---
 

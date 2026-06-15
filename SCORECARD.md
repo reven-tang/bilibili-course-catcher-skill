@@ -268,3 +268,31 @@
 **评分者**: 萨莉  
 **评分时间**: 2026-06-14 18:45  
 **下次评审**: 2026-06-21（7 天后复盘改进进度）
+
+---
+
+## Perplexity Skill Optimizer 优化记录（2026-06-15）
+
+### 基线评估
+| 维度 | 得分 | 说明 |
+|------|------|------|
+| Description | 8/10 | 有真实触发词，长度合理 |
+| Body | 8/10 | 意图清晰，5维评分有细则 |
+| Structure | 6/10 | ❌ 缺 evals/、templates/ |
+| Evals | 2/10 | ❌ 无测试用例 |
+| **综合** | **24/40** | P1 改进区间 |
+
+### 优化执行
+| 优先级 | 改进项 | 状态 |
+|--------|--------|------|
+| P1 | 变更日志外置 `references/changelog.md` | ✅ 完成 |
+| P1 | 输出模板外置 `templates/output-template.md` | ✅ 完成 |
+| P1 | 创建 `evals/cases.md` | ✅ 完成 |
+| P1 | Body 添加负面示例 | ✅ 完成 |
+| P1 | 同步更新 README.md | ✅ 完成 |
+| P1 | 同步更新 SCORECARD.md | ✅ 完成 |
+
+### 优化后预期
+- Structure: 6→9/10（evals/ + templates/ + references/ 完整）
+- Evals: 2→8/10（Positive≥5 + Negative≥3 + Boundary≥3）
+- **综合预期**: 30-32/40
