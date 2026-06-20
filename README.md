@@ -443,5 +443,3 @@ MIT License — 自由使用、修改、分发
 ---
 
 > 🏆 **"The compiled truth is the answer. The timeline is the proof."**
-> 
-> 本技能由 [萨莉](https://github.com/你的用户名) 基于 [OpenClaw](https://github.com/openclaw/openclaw) 平台开发
